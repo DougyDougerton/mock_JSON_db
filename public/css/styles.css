@@ -1,5 +1,6 @@
 body{
     background: linear-gradient(to left, blue, lightblue);
+
 }
 
 form{
@@ -14,6 +15,7 @@ form{
     backdrop-filter: blur(5px);
 }
 
+
 #formContainer{
     display: flex;
     justify-content: center;
@@ -23,7 +25,7 @@ form{
 
 h4{
     margin-top: top 10px;
-    width: 100%;
+    width: 90%;
     text-transform: uppercase;
     background: grey;
     font-size: 10px;
@@ -40,7 +42,7 @@ label{
 input[type="text"],
 input[type="email"],
 input[type="number"] {
-    width: 100%;
+    width: 90%;
     padding: 5px;
     border: 1px solid #ddd;
     border-radius: 3px;
@@ -67,11 +69,4 @@ button[type="submit"]:hover{
     height: 50px;
     width: 50px;
     border-radius: 25px;
-}
-form:nth-child(2){
-    position: absolute;
-    top: 25;
-    right: 5%;
-    box-shadow: none !important;
-    border: none !important;
 }
