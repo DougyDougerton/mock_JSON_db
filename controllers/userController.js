@@ -21,7 +21,7 @@ async function createUser(req, res){
         data.users.push(newUser);
         await writeData(data);
 
-      res.json("User added successfully!");
+      res.json("아싸!! User added successfully! 잘했어!");
 
      }catch(error){
       
@@ -30,7 +30,27 @@ async function createUser(req, res){
     }
 }
 
+//function for updating user
+async function updateUser(req, res) {
+    try{
+        const data = readData();
+        const user = data.users.find(user => user.id === parseInt(req.params.id));
+
+        if(user){
+            user.username = req.body.username || user.username;
+            user.first_name = req.body.first_name || user.first_name;
+            user.email = req.body.email || user.email;
+        } else {
+            res.status(404).send("User not found");
+        }
+
+    } catch(error) {
+        res.status(500).json("Internal Server Error");
+    }
+}
+
 
 module.exports = {
     createUser,
+    updateUser,
 }
