@@ -1,12 +1,6 @@
 {
   "users": [
     {
-      "id": 1,
-      "username": "User1",
-      "first_name": "DougyDougerton",
-      "email": "Dougmeister@aol.com"
-    },
-    {
       "id": 2,
       "username": "User2",
       "first_name": "Clank",
@@ -17,6 +11,24 @@
       "username": "uwu",
       "first_name": "Git_phucked",
       "email": "doItForTheLawlz@aol.com"
+    },
+    {
+      "id": 4,
+      "username": "doug",
+      "first_name": "Douglas",
+      "email": "doItForTheLawlz@aol.com"
+    },
+    {
+      "id": 5,
+      "username": "newUser",
+      "first_name": "TheOneAndOnly",
+      "email": "yoursTruly@yahoo.ca"
+    },
+    {
+      "id": 6,
+      "username": "newUser",
+      "first_name": "TheOneAndOnly",
+      "email": "yoursTruly@yahoo.ca"
     }
   ]
 }
